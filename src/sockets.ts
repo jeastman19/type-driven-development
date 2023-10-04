@@ -27,6 +27,7 @@ class ConnectedSocket implements IConnectedSocket {
 export class DisconnectedSocket implements IDisconnectedSocket {
   connect(): ConnectedSocket {
     console.log("Conectando el socket");
+
     return new ConnectedSocket(this);
   }
 }
